@@ -1,0 +1,49 @@
+/* .carousel .carousel-item {
+    height: 500px;
+  }
+  
+  img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      max-height: 500px;
+  } */
+
+
+
+  .centerdiv{
+      height: 14vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .a{
+      height:70px;
+      width:70px;
+      background-color :#f5f6fa;
+      /* background-color: black; */
+      border-radius: 70px;
+      text-align:center;
+      line-height:80px;
+      margin:5px;
+      box-shadow: 1px 4px 2px 2px #dcdde1;
+    }
+
+    .fa-instagram{
+        color:#e84393;
+    }
+    .fa-twitter{
+        color:#0097e6;
+    }
+
+    
+i{
+    transition: all 0.3s linear;
+}
+
+.a:hover i{
+    transform :scale(1.4);
+}

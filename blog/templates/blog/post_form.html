@@ -1,0 +1,14 @@
+{%  extends "blog/base.html" %}
+{% block bodyblock %}
+    <h2><div class="text-center"><em>New Post</em></div></h2>
+    <div class="jumbotron">
+    <form class = "post-form" method = "POST">
+        {% csrf_token %}
+        {{form.media}}
+        {{form.as_p}}
+        <button type="submit" class="save btn btn-success">Save</button>
+    </form>
+  </div>
+    <!--editale is used already in forms.py inside widgets-->
+  <!-- <script>var editor = new MediumEditor('.editable');</script> -->
+{% endblock %}

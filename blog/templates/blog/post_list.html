@@ -1,0 +1,57 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block bodyblock %}
+
+<img src="{% static 'images/1.jpg' %}" class="img-fluid">
+
+<div class="mx-auto my-4" style="width: 200px;">
+    <h3><em><u>Recent Blogs</u></em></h3></div>
+
+<div class="centerstage">
+    {% for post in post_list %}
+    <!-- <div class="post"> -->
+    
+
+
+    
+    <!-- starting  -->
+    <div class="container" stye>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <h1><a style="font-size: 0.50em;font-family: 'Kanit', sans-serif;" class="px-0" href="{% url 'post_detail' pk=post.pk %}"><b><i>{{post.title}}</i></a></b></h1>
+                            
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>{{post.snippet}}</p> <br>
+                        {% if post.published_date %}
+                            <div class="date postdate">Published on : {{post.published_date}}</div>
+
+                            {% endif %}
+                        <!-- <p>Published on : {{post.published}}</p> -->
+                        <!-- <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approved_comment.count}}</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ending -->
+    <!-- <h1><a href = "{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+        <p>{{post.snippet }}</p>
+            
+                <p>Published on : {{post.published|date:"D M Y"}}</p>
+            
+    <a href = "{% url 'post_detail' pk=post.pk %}">Comments: {{post.approved_comment.count}}</a> -->
+
+    {% endfor %}
+</div>
+{% endblock %}

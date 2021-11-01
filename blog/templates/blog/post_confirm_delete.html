@@ -1,0 +1,27 @@
+{%  extends "blog/base.html" %}
+{% block bodyblock %}
+
+
+
+<div class="card text-center my-5">
+    <!-- <h5 class="card-header">Featured</h5> -->
+    <div class="card-body">
+      <h5 class="card-title">Delete {{ object }} ? </h5>
+      <p class="card-text">
+          <form method = "POST">
+        {% csrf_token %}
+        <p>Are you sure you want to delete {{ object }} ?</p>
+        <input type = "submit" class='btn btn-danger' value = "Confirm">
+    </form>
+</p>
+      
+    </div>
+  </div>
+<!-- <form method = "POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete {{ object }} ?</p>
+    <input type = "submit" class='btn btn-danger' value = "Confirm">
+</form> -->
+
+  
+{% endblock %}
