@@ -1,14 +1,14 @@
 # RxpharmD
 
 
-Blogpost
+#Blogpost
 
 
 
-Tech used : Django ,Bootstrap and CSS . 
+#Tech used : Django ,Bootstrap and CSS . 
 
-A blog site where admin can create medical related blog and publish them as well. 
+#A blog site where admin can create medical related blog and publish them as well. 
 
-Admin can even save incomplete blogs as drafts before publishing .
+#Admin can even save incomplete blogs as drafts before publishing .
 
-Aloso admin can approve comments to be published on the blogs.
+#Aloso admin can approve comments to be published on the blogs.
