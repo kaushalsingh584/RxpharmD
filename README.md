@@ -1,6 +1,10 @@
 # RxpharmD
+
+
 Blogpost
-RxpharmD
+
+
+
 Tech used : Django ,Bootstrap and CSS . 
 
 A blog site where admin can create medical related blog and publish them as well. 
