@@ -1,16 +1,17 @@
 {% extends "blog/base.html" %}
 {% block bodyblock %}
 
-<div class="container text-center my-4">
-<h1 class="posttitle">{{post.title}}</h1>
+<div class="container text my-4">
+<u><h1 class="posttitle text-center">{{post.title}}</h1></u>
 <!-- <p>{{post.snippet}}</p> -->
 
-
+<br>
 {% if post.published_date %}
-<div class="date postdate">Published on : {{post.published_date}}</div>
+
+<i><b><div class="date postdate">Published on : {{post.published_date}}</div></b></i>
 
 {% else %}
-
+<br>
 <a class="btn btn-success my-2" href="{% url 'post_publish' pk=post.pk %}">Publish :</a>
 
 {% endif %}
