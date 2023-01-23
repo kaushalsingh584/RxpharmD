@@ -28,7 +28,7 @@ SECRET_KEY = 'a9+six8&z&j(cb*p30bqsmva!pb55x=61^yuq5z&khz$r2hd#s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["rxpharmd-production.up.railway.app"]
 
 
 # Application definition
